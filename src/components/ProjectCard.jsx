@@ -3,15 +3,14 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import githubIcon from '../assets/icons/githubIcon.png'
 import shareIcon from '../assets/icons/shareIcon.png'
-import soapagencyBanner from '../assets/projectBanner/soapagencyBanner.JPG'
 
 function ProjectCard(props) {
     const data = props.data
     console.log(data)
     return (
         <>{data.map(({ id, name, desc, pathBanner, urlGithub, urlHost, frontend, backend, type }) => (
-            <Card style={{ witdh: '25rem' }} key={id}>
-                <Card.Img variant="top" src={pathBanner} />
+            <Card key={id} className="card-custom">
+                <Card.Img variant="top" src={pathBanner} alt={"preview of the project " + name} className="card-banner" />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>{desc}{frontend}{backend}{type}</Card.Text>
@@ -24,7 +23,8 @@ function ProjectCard(props) {
                     {backend ? 'Backend' : null}
                 </Card.Footer>
             </Card>
-        ))}
+        ))
+        }
         </>
     )
 }
