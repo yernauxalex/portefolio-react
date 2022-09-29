@@ -17,10 +17,9 @@ function ProjectCard(props) {
                     <a href={urlGithub}><img src={githubIcon} alt="logo" width="24" height="24" className="mx-2" /></a>
                     {urlHost != '' ? (<a href={urlHost}><img src={shareIcon} alt="logo" width="24" height="24" className="mx-2" /></a>) : (<></>)}
                 </Card.Body>
-                <Card.Footer>
-                    {frontend ? 'Frontend' : null}
-                    {' '}
-                    {backend ? 'Backend' : null}
+                <Card.Footer className="d-flex justify-content-around">
+                    {frontend ? <p className="mb-0">Frontend</p> : null}
+                    {backend ? <p className="mb-0">Backend</p> : null}
                 </Card.Footer>
             </Card>
         ))
