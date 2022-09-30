@@ -7,12 +7,12 @@ function Home() {
     console.log(project)
     return (
         <>
-            <Row>
-                <Col>
-                    <Container>
-                        <img src="" alt="profile picture" />
+            <Row className="mx-0">
+                <Col lg="auto" className="ps-5  pe-0 d-flex justify-content-center align-items-center">
+                    <Container className="profile">
+                        <img src="https://picsum.photos/100/100" alt="profile picture" className="img-rounded" />
                         <h1>Yernaux Alexis</h1>
-                        <p>desc</p>
+                        <p>Junior Fullstack developer currently looking for a job on Paris or on remote</p>
                         <ul><h2>Technos</h2>
                             <li>ReactJs</li>
                             <li>NodeJs</li>
@@ -20,8 +20,8 @@ function Home() {
                         </ul>
                     </Container>
                 </Col>
-                <Col md="auto">
-                    <Container className="d-flex justify-content-center flex-wrap">
+                <Col className="px-0">
+                    <Container className="px-0 d-flex justify-content-center flex-wrap">
                         <ProjectCard data={project} />
                     </Container>
                 </Col>

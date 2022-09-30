@@ -15,3 +15,20 @@
   min-width: none;
   object-fit:fill
 }
+.img-rounded{
+  border-radius: 50px;
+  object-fit:cover;
+}
+.profile{
+  height: fit-content;
+  max-width: max-content;
+  color: white;
+}
+.profile>p{
+  font-size: 1rem;
+  max-width: fit-content;
+}
+.profile>ul{
+  list-style-type: none;
+  padding-left: 0;
+}
