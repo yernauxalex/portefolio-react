@@ -13,7 +13,7 @@
   min-height: none;
   max-width: 25rem;
   min-width: none;
-  object-fit:fill
+  object-fit:contain;
 }
 .img-rounded{
   border-radius: 50px;

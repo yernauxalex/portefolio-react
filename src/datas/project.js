@@ -1,5 +1,8 @@
 import soapAgencyBanner from '../assets/projectBanner/soapagencyBanner.JPG';
 import astroSpotifyBanner from '../assets/projectBanner/astrospotifyBanner.JPG';
+import groupomaniaBanner from '../assets/projectBanner/groupomaniaBanner.png';
+import kanapBanner from '../assets/projectBanner/kanapBanner.png';
+import reviewsBanner from '../assets/projectBanner/reviewsBanner.png';
 export const project = [
     {
         id: 1,
@@ -29,7 +32,7 @@ export const project = [
         name: 'Projet OC 7 - Réseau social d’entreprise',
         desc:
             "Création d'un réseau social d'entreprise fictif, ayant pour fonctionnalités la création de post texte ou image, possiblité de commenter nos postes et ceux de nos collègues, possibilité de like les posts",
-        pathBanner: astroSpotifyBanner,
+        pathBanner: groupomaniaBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_7_31012022',
         urlHost: '',
         frontend: true,
@@ -40,7 +43,7 @@ export const project = [
         id: 4,
         name: 'Projet OC 6 - API sécurisée pour une application',
         desc: "Création d'une API sécurisée pour une application d'avis gastronomiques",
-        pathBanner: astroSpotifyBanner,
+        pathBanner: reviewsBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_6_08012022',
         urlHost: '',
         frontend: false,
@@ -51,7 +54,7 @@ export const project = [
         id: 5,
         name: 'Projet OC 5 - Kanap',
         desc: "Création de la partie dynamique du site d'e-commerce de Kanap",
-        pathBanner: astroSpotifyBanner,
+        pathBanner: kanapBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_5_26112021',
         urlHost: '',
         frontend: true,
