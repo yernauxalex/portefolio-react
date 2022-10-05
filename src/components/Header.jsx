@@ -1,5 +1,7 @@
 import React from "react"
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import linkedinIcon from '../assets/icons/linkedinIcon.png'
+import emailIcon from '../assets/icons/emailIcon.png'
 
 function Header() {
     return (
@@ -16,6 +18,8 @@ function Header() {
                         <Nav.Link eventKey={2} href="#contact">
                             Contact me
                         </Nav.Link>
+                        <Nav.Link href="https://www.linkedin.com/in/yernauxalexis/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="logo" width="24" height="24" className="mx-2" /></Nav.Link>
+                        <Nav.Link href="mailto: yernauxalex@gmail.com"><img src={emailIcon} alt="logo" width="24" height="24" className="mx-2" /></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
