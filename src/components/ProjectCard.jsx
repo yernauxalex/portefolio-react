@@ -1,8 +1,8 @@
 import React from 'react'
 import { Card, Modal } from 'react-bootstrap'
 function ProjectCard(props) {
-    const data = props
-    console.log(props)
+    const data = props.data
+
     return (
         <Modal show={props.isOpen} onHide={props.toggle} aria-labelledby="contact us form"
             centered>

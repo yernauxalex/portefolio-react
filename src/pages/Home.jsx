@@ -10,7 +10,15 @@ import emailIcon from '../assets/icons/emailIcon.png'
 function Home() {
     console.log(project)
     const [show, setShow] = useState(false);
+    const [projectData, setProjectData] = useState([])
     const toggleModal = () => setShow(prevShow => !prevShow)
+
+    function getDataModal(project_id) {
+        const newData = [...project]
+        const seekId = (data) => data.id === project_id
+        const projectIndex = newData.findIndex(seekId)
+        setProjectData(newData[projectIndex])
+    }
     return (
         <>
             <Row className="mx-0">
@@ -30,8 +38,8 @@ function Home() {
                 </Col>
                 <Col className="px-0">
                     <Container className="px-0 d-flex justify-content-center flex-wrap">
-                        <PreviewProjectCard data={project} toggle={toggleModal} />
-                        <ProjectCard data={project} isOpen={show} toggle={toggleModal} />
+                        <PreviewProjectCard data={project} toggle={toggleModal} fc={getDataModal} />
+                        <ProjectCard data={projectData} isOpen={show} toggle={toggleModal} />
                     </Container>
                 </Col>
             </Row>
