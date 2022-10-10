@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Col, Row } from 'react-bootstrap';
 import PreviewProjectCard from "../components/PreviewProjectCard";
+import ProjectCard from '../components/ProjectCard'
 import { project } from '../datas/project'
 import profileIcon from '../assets/profileIcon.jpg'
 import linkedinIcon from '../assets/icons/linkedinIcon.png'
@@ -8,6 +9,8 @@ import emailIcon from '../assets/icons/emailIcon.png'
 
 function Home() {
     console.log(project)
+    const [show, setShow] = useState(false);
+    const toggleModal = () => setShow(prevShow => !prevShow)
     return (
         <>
             <Row className="mx-0">
@@ -27,7 +30,8 @@ function Home() {
                 </Col>
                 <Col className="px-0">
                     <Container className="px-0 d-flex justify-content-center flex-wrap">
-                        <PreviewProjectCard data={project} />
+                        <PreviewProjectCard data={project} toggle={toggleModal} />
+                        <ProjectCard data={project} isOpen={show} toggle={toggleModal} />
                     </Container>
                 </Col>
             </Row>

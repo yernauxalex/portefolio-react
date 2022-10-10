@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import { Card, Modal } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import githubIcon from '../assets/icons/githubIcon.png'
 import shareIcon from '../assets/icons/shareIcon.png'
 
 function PreviewProjectCard(props) {
     const data = props.data
+    const toggleModal = props.toggle
     console.log(data)
 
     return (
@@ -13,7 +14,7 @@ function PreviewProjectCard(props) {
             <Card key={id} className="card-custom">
                 <Card.Img variant="top" src={pathBanner} alt={"preview of the project " + name} className="card-banner" />
                 <Card.Body>
-                    <Card.Title>{name}</Card.Title>
+                    <a onClick={toggleModal} ><Card.Title>{name}</Card.Title></a>
                     <Card.Text>{desc}{frontend}{backend}{type}</Card.Text>
                     <a href={urlGithub} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="logo" width="24" height="24" className="mx-2" /></a>
                     {urlHost != '' ? (<a href={urlHost} target="_blank" rel="noopener noreferrer"><img src={shareIcon} alt="logo" width="24" height="24" className="mx-2" /></a>) : (<></>)}
@@ -25,7 +26,6 @@ function PreviewProjectCard(props) {
             </Card>
         ))
         }
-
         </>
     )
 }
