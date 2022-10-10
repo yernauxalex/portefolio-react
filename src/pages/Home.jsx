@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from 'react-bootstrap';
-import ProjectCard from "../components/ProjectCard";
+import PreviewProjectCard from "../components/PreviewProjectCard";
 import { project } from '../datas/project'
 import profileIcon from '../assets/profileIcon.jpg'
 import linkedinIcon from '../assets/icons/linkedinIcon.png'
@@ -27,7 +27,7 @@ function Home() {
                 </Col>
                 <Col className="px-0">
                     <Container className="px-0 d-flex justify-content-center flex-wrap">
-                        <ProjectCard data={project} />
+                        <PreviewProjectCard data={project} />
                     </Container>
                 </Col>
             </Row>
