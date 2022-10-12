@@ -1,30 +1,53 @@
+/* eslint-disable no-unused-vars */
 import soapAgencyBanner from '../assets/projectBanner/soapagencyBanner.JPG';
 import astroSpotifyBanner from '../assets/projectBanner/astrospotifyBanner.JPG';
 import groupomaniaBanner from '../assets/projectBanner/groupomaniaBanner.png';
 import kanapBanner from '../assets/projectBanner/kanapBanner.png';
 import reviewsBanner from '../assets/projectBanner/reviewsBanner.png';
+import chouetteagenceBanner from '../assets/projectBanner/chouetteagenceBanner.png';
+import ohmyfoodBanner from '../assets/projectBanner/ohmyfoodBanner.png';
+import bootstrapIcon from '../assets/icons/bootstrapIcon.png';
+import reactIcon from '../assets/icons/reactIcon.png';
+import nodejsIcon from '../assets/icons/nodejsIcon.png';
+import javascriptIcon from '../assets/icons/javascriptIcon.png';
+import postgreIcon from '../assets/icons/postgreIcon.png';
+import html5Icon from '../assets/icons/html5Icon.png';
 export const project = [
     {
         id: 1,
         name: 'Soap Agency',
-        desc: 'Landing page of a marketing agency',
+        desc: "Page d'accueil d'une agence de marketing",
+        descEN: 'Landing page of a marketing agency',
         pathBanner: soapAgencyBanner,
         urlGithub: 'https://github.com/yernauxalex/marketing-agency',
         urlHost: 'https://yernauxalex.github.io/marketing-agency/',
+        hostBy: 'GithubPages',
         frontend: true,
         backend: false,
-        tech: ['react', 'bootstrap'],
+        tech: [
+            { name: 'Javascript', icon: javascriptIcon },
+            { name: 'React', icon: reactIcon },
+            { name: 'Bootstrap', icon: bootstrapIcon }
+        ],
         type: 'perso'
     },
     {
         id: 2,
         name: 'Astro Spotify',
-        desc: 'Find your matching sign based on your favorite artists on Spotify 🎶',
+        desc:
+            "Trouvez le signe astrologique compatible avec le votre d'après vos artistes favoris sur Spotify 🎶",
+        descEN: 'Find your matching sign based on your favorite artists on Spotify 🎶',
         pathBanner: astroSpotifyBanner,
         urlGithub: 'https://github.com/yernauxalex/astralspotify',
         urlHost: 'https://resonant-medovik-c1c915.netlify.app/',
+        hostBy: 'Netlify',
         frontend: true,
         backend: false,
+        tech: [
+            { name: 'Javascript', icon: javascriptIcon },
+            { name: 'React', icon: reactIcon },
+            { name: 'Bootstrap', icon: bootstrapIcon }
+        ],
         type: 'perso'
     },
     {
@@ -35,8 +58,16 @@ export const project = [
         pathBanner: groupomaniaBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_7_31012022',
         urlHost: '',
+        hostBy: null,
         frontend: true,
         backend: true,
+        tech: [
+            { name: 'Javascript', icon: javascriptIcon },
+            { name: 'React', icon: reactIcon },
+            { name: 'NodeJs', icon: nodejsIcon },
+            { name: 'PostgreSQL', icon: postgreIcon },
+            { name: 'Express', icon: null }
+        ],
         type: 'OC'
     },
     {
@@ -46,8 +77,15 @@ export const project = [
         pathBanner: reviewsBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_6_08012022',
         urlHost: '',
+        hostBy: null,
         frontend: false,
         backend: true,
+        tech: [
+            { name: 'Javascript', icon: javascriptIcon },
+            { name: 'NodeJs', icon: nodejsIcon },
+            { name: 'MongoDB', icon: null },
+            { name: 'Express', icon: null }
+        ],
         type: 'OC'
     },
     {
@@ -57,8 +95,36 @@ export const project = [
         pathBanner: kanapBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_5_26112021',
         urlHost: '',
+        hostBy: null,
         frontend: true,
         backend: false,
+        tech: [{ name: 'Javascript', icon: javascriptIcon }],
+        type: 'OC'
+    },
+    {
+        id: 6,
+        name: 'Projet OC 4 - La Chouette Agence',
+        desc: "Optimisation de l'accessibilité et du SEO",
+        pathBanner: chouetteagenceBanner,
+        urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_4_16112021',
+        urlHost: 'https://yernauxalex.github.io/YERNAUXAlexis_4_16112021/',
+        hostBy: 'GithubPages',
+        frontend: true,
+        backend: false,
+        tech: null,
+        type: 'OC'
+    },
+    {
+        id: 7,
+        name: 'Projet OC 3 - OhMyFood',
+        desc: 'Dynamiser une page web avec des animations CSS',
+        pathBanner: ohmyfoodBanner,
+        urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_3_26102021',
+        urlHost: 'https://yernauxalex.github.io/YERNAUXAlexis_3_26102021/',
+        hostBy: 'GithubPages',
+        frontend: true,
+        backend: false,
+        tech: [{ name: 'HTML', icon: html5Icon }, { name: 'SCSS' }],
         type: 'OC'
     }
 ];
