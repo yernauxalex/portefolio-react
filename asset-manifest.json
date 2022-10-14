@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portefolio-react/static/css/main.fe488aa3.css",
+    "main.js": "/portefolio-react/static/js/main.ed6d3ca8.js",
+    "static/js/787.84ce6950.chunk.js": "/portefolio-react/static/js/787.84ce6950.chunk.js",
+    "static/media/chouetteagenceBanner.png": "/portefolio-react/static/media/chouetteagenceBanner.a1ce0c483a5aa4a6620d.png",
+    "static/media/kanapBanner.png": "/portefolio-react/static/media/kanapBanner.9dd62ec60f8e3dd05244.png",
+    "static/media/ohmyfoodBanner.png": "/portefolio-react/static/media/ohmyfoodBanner.bf9c7905ba0ac97b6a0a.png",
+    "static/media/groupomaniaBanner.png": "/portefolio-react/static/media/groupomaniaBanner.e8eaac00eb7ea0edf720.png",
+    "static/media/soapagencyBanner.JPG": "/portefolio-react/static/media/soapagencyBanner.073a1b67bed3e2373479.JPG",
+    "static/media/astrospotifyBanner.JPG": "/portefolio-react/static/media/astrospotifyBanner.d209986b36aeaee61011.JPG",
+    "static/media/profileIcon.jpg": "/portefolio-react/static/media/profileIcon.7e736488587777ddc5b9.jpg",
+    "static/media/reviewsBanner.png": "/portefolio-react/static/media/reviewsBanner.86eaf411ffc2eeadd170.png",
+    "static/media/background.svg": "/portefolio-react/static/media/background.b3833d7b56c242c40d68.svg",
+    "index.html": "/portefolio-react/index.html",
+    "main.fe488aa3.css.map": "/portefolio-react/static/css/main.fe488aa3.css.map",
+    "main.ed6d3ca8.js.map": "/portefolio-react/static/js/main.ed6d3ca8.js.map",
+    "787.84ce6950.chunk.js.map": "/portefolio-react/static/js/787.84ce6950.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe488aa3.css",
+    "static/js/main.ed6d3ca8.js"
+  ]
+}
