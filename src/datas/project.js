@@ -15,8 +15,9 @@ import html5Icon from '../assets/icons/html5Icon.png';
 export const project = [
     {
         id: 1,
-        name: 'Soap Agency',
-        desc: "Page d'accueil d'une agence de marketing",
+        nameFR: 'Soap Agency',
+        nameEN: 'Soap Agency',
+        descFR: "Page d'accueil d'une agence de marketing",
         descEN: 'Landing page of a marketing agency',
         pathBanner: soapAgencyBanner,
         urlGithub: 'https://github.com/yernauxalex/marketing-agency',
@@ -33,8 +34,9 @@ export const project = [
     },
     {
         id: 2,
-        name: 'Astro Spotify',
-        desc:
+        nameFR: 'Astro Spotify',
+        nameEN: 'Astro Spotify',
+        descFR:
             "Trouvez le signe astrologique compatible avec le votre d'après vos artistes favoris sur Spotify 🎶",
         descEN: 'Find your matching sign based on your favorite artists on Spotify 🎶',
         pathBanner: astroSpotifyBanner,
@@ -52,9 +54,12 @@ export const project = [
     },
     {
         id: 3,
-        name: 'Projet OC 7 - Réseau social d’entreprise',
-        desc:
+        nameFR: 'Projet OC 7 - Réseau social d’entreprise',
+        nameEN: 'Project OC 7 - Corporate social network',
+        descFR:
             "Création d'un réseau social d'entreprise fictif, ayant pour fonctionnalités la création de post texte ou image, possiblité de commenter nos postes et ceux de nos collègues, possibilité de like les posts",
+        descEN:
+            'Creation of a fictitious company social network, with the possibility to create text or image posts, to comment on our posts and those of our colleagues, to like posts',
         pathBanner: groupomaniaBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_7_31012022',
         urlHost: '',
@@ -72,8 +77,10 @@ export const project = [
     },
     {
         id: 4,
-        name: 'Projet OC 6 - API sécurisée pour une application',
-        desc: "Création d'une API sécurisée pour une application d'avis gastronomiques",
+        nameFR: 'Projet OC 6 - API sécurisée pour une application',
+        nameEN: 'Project OC 6 - Secure API for an application',
+        descFR: "Création d'une API sécurisée pour une application d'avis gastronomiques",
+        descEN: 'Creation of a secure API for a food review application',
         pathBanner: reviewsBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_6_08012022',
         urlHost: '',
@@ -90,8 +97,10 @@ export const project = [
     },
     {
         id: 5,
-        name: 'Projet OC 5 - Kanap',
-        desc: "Création de la partie dynamique du site d'e-commerce de Kanap",
+        nameFR: 'Projet OC 5 - Kanap',
+        nameEn: 'Project OC 5 - Kanap',
+        descFR: "Création de la partie dynamique du site d'e-commerce de Kanap",
+        descEn: "Creation of the dynamic part of Kanap's e-commerce website",
         pathBanner: kanapBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_5_26112021',
         urlHost: '',
@@ -103,8 +112,10 @@ export const project = [
     },
     {
         id: 6,
-        name: 'Projet OC 4 - La Chouette Agence',
+        nameFR: 'Projet OC 4 - La Chouette Agence',
+        nameEN: 'Project OC 4 - La Chouette Agence',
         desc: "Optimisation de l'accessibilité et du SEO",
+        descEN: 'Accessibility and SEO optimisation',
         pathBanner: chouetteagenceBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_4_16112021',
         urlHost: 'https://yernauxalex.github.io/YERNAUXAlexis_4_16112021/',
@@ -116,8 +127,10 @@ export const project = [
     },
     {
         id: 7,
-        name: 'Projet OC 3 - OhMyFood',
-        desc: 'Dynamiser une page web avec des animations CSS',
+        nameFR: 'Projet OC 3 - OhMyFood',
+        nameEN: 'Project OC 3 - OhMyFood',
+        descFR: 'Dynamiser une page web avec des animations CSS',
+        descEn: 'Making a web page dynamic with CSS animations',
         pathBanner: ohmyfoodBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_3_26102021',
         urlHost: 'https://yernauxalex.github.io/YERNAUXAlexis_3_26102021/',
