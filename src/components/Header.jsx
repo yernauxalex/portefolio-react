@@ -1,9 +1,17 @@
-import React from "react"
+import React, { useContext } from "react"
+import { LanguageContext } from "../Utils/LanguageContext";
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import linkedinIcon from '../assets/icons/linkedinIcon.png'
 import emailIcon from '../assets/icons/emailIcon.png'
+import franceFlag from '../assets/icons/franceFlag.png'
+import ukFlag from '../assets/icons/ukFlag.png'
 
 function Header() {
+    const { setLanguageState } = useContext(LanguageContext)
+
+    const toggleLanguage = (event, langUser) => {
+        setLanguageState({ lang: langUser })
+    }
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
@@ -11,10 +19,10 @@ function Header() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#placeholder">placeholder</Nav.Link>
+                        <Nav.Link onClick={event => toggleLanguage(event, 'fr-FR')}><img src={franceFlag} alt="logo" width="24" height="24" className="" /></Nav.Link>
+                        <Nav.Link onClick={event => toggleLanguage(event, 'en-GB')}><img src={ukFlag} alt="logo" width="24" height="24" className="" /></Nav.Link>
                         <Nav.Link eventKey={2} href="#contact">
                             Contact me
                         </Nav.Link>
