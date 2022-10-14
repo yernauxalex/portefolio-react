@@ -19,24 +19,24 @@ function PreviewProjectCard(props) {
                 </a>
                 <Card.Body className="d-flex flex-column justify-content-evenly">
                     <a onClick={event => handleClick(event, id)}>
-                        {languageState.lang === 'en-GB' ? (<>
-                            <Card.Title>{nameEN}</Card.Title>
-                            <Card.Text>{descEN}</Card.Text></>
-                        ) : languageState.lang === 'fr-FR' ? (<>
+                        {languageState.lang === 'fr-FR' ? (<>
                             <Card.Title>{nameFR}</Card.Title>
                             <Card.Text>{descFR}</Card.Text></>
-                        ) : null}
+                        ) : (<>
+                            <Card.Title>{nameEN}</Card.Title>
+                            <Card.Text>{descEN}</Card.Text>
+                        </>)}
 
                     </a>
                     <Card.Text className="mb-0">
                         <a href={urlGithub} target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="logo" width="24" height="24" className="mx-2" /></a>
                         {urlHost != '' ? (<a href={urlHost} target="_blank" rel="noopener noreferrer"><img src={shareIcon} alt="logo" width="24" height="24" className="mx-2" /></a>) : null}
                     </Card.Text>
-                    {languageState.lang === 'en-GB' ? (
-                        <>{type === 'perso' ? (<Card.Text>Personnal project</Card.Text>) : type === 'OC' ? (<Card.Text>OpenClassrooms Project</Card.Text>) : null}</>
-                    ) : languageState.lang === 'fr-FR' ? (
-                        <>{type === 'perso' ? (<Card.Text>Projet personnel</Card.Text>) : type === 'OC' ? (<Card.Text>Projet OpenClassrooms</Card.Text>) : null}</>
-                    ) : null}
+                    {languageState.lang === 'fr-FR' ? (<>{
+                        type === 'perso' ? (<Card.Text>Projet personnel</Card.Text>) : type === 'OC' ? (<Card.Text>Projet OpenClassrooms</Card.Text>) : null}</>
+                    ) : (<>
+                        {type === 'perso' ? (<Card.Text>Personnal project</Card.Text>) : type === 'OC' ? (<Card.Text>OpenClassrooms Project</Card.Text>) : null}
+                    </>)}
                 </Card.Body>
                 <Card.Footer className="d-flex justify-content-around">
                     {frontend ? <p className="mb-0">Frontend</p> : null}

@@ -98,9 +98,9 @@ export const project = [
     {
         id: 5,
         nameFR: 'Projet OC 5 - Kanap',
-        nameEn: 'Project OC 5 - Kanap',
+        nameEN: 'Project OC 5 - Kanap',
         descFR: "Création de la partie dynamique du site d'e-commerce de Kanap",
-        descEn: "Creation of the dynamic part of Kanap's e-commerce website",
+        descEN: "Creation of the dynamic part of Kanap's e-commerce website",
         pathBanner: kanapBanner,
         urlGithub: 'https://github.com/yernauxalex/YERNAUXAlexis_5_26112021',
         urlHost: '',

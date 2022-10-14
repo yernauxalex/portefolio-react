@@ -12,31 +12,29 @@ function ProjectCard(props) {
             centered>
             <Modal.Header closeButton>
                 <Modal.Title>
-                    {languageState.lang === 'en-GB' ? (
-                        <>{data.nameEN}</>
-                    ) : languageState.lang === 'fr-FR' ? (
+                    {languageState.lang === 'fr-FR' ? (
                         <>{data.nameFR}</>
-                    ) : null}
+                    ) : (
+                        <>{data.nameEN}</>
+                    )}
                     {data.urlHost != '' ? (<a href={data.urlHost} target="_blank" rel="noopener noreferrer"><img src={shareIcon} alt="logo" width="20" height="20" className="mx-2" /></a>) : null}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                {languageState.lang === 'en-GB' ? (<>
-                    <p>Rich desc {data.descEN}</p>
-                    {data.hostBy ? (<p>Hosted by {data.hostBy}</p>) : null}</>
-                ) : languageState.lang === 'fr-FR' ? (<>
+                {languageState.lang === 'fr-FR' ? (<>
                     <p>Description détaillée {data.descFR}</p>
-                    {data.hostBy ? (<p>Hébergé via {data.hostBy}</p>) : null}</>
-                ) : null}
-
-
+                    {data.hostBy ? (<p>Hébergé par {data.hostBy}</p>) : null}</>
+                ) : (<>
+                    <p>Rich desc {data.descEN}</p>
+                    {data.hostBy ? (<p>Hosted by  {data.hostBy}</p>) : null}</>
+                )}
                 {data.tech != null ? (
                     <>
-                        {languageState.lang === 'en-GB' ? (
-                            <h3>Tech used</h3>
-                        ) : languageState.lang === 'fr-FR' ? (
+                        {languageState.lang === 'fr-FR' ? (
                             <h3>Technos utilisées</h3>
-                        ) : null}
+                        ) : (
+                            <h3>Tech used</h3>
+                        )}
 
                         <Stack gap={1}>
                             {data.tech.map(({ name, icon }) =>
