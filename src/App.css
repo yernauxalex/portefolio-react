@@ -6,6 +6,7 @@
 }
 .card-custom{
   max-width: 25rem;
+  min-width: 25rem;
   margin: 1rem;
 }
 .card-banner{
@@ -24,6 +25,9 @@
   max-width: max-content;
   color: white;
 }
+.profile>img{
+  margin-bottom: 1rem;
+}
 .profile>p{
   font-size: 1rem;
   max-width: fit-content;
@@ -31,4 +35,11 @@
 .profile>ul{
   list-style-type: none;
   padding-left: 0;
+}
+.modal-custom{
+  min-width: 50vw;
+  width: fit-content;
+}
+h3{
+  font-size: 1.2rem;
 }
