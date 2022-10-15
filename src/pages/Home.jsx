@@ -24,8 +24,8 @@ function Home() {
     return (
         <>
             <Row className="mx-0">
-                <Col lg="auto" className="ps-5  pe-0 d-flex justify-content-center align-items-center">
-                    <Container className="profile">
+                <Col lg="auto" className="px-0 ps-lg-5 d-flex justify-content-center align-items-center">
+                    <Container className="py-5 profile">
                         <img src={profileIcon} alt="profile picture" width="200" height="200" className="img-rounded" />
                         <h1>Yernaux Alexis</h1>
                         {languageState.lang === 'fr-FR' ? (<p>Développeur fullstack junior cherchant un emploi en région Parisienne ou en remote</p>) :

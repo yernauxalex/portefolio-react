@@ -20,14 +20,17 @@ function Header() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                     </Nav>
-                    <Nav>
-                        <Nav.Link onClick={event => toggleLanguage(event, 'fr-FR')}><img src={franceFlag} alt="logo" width="24" height="24" className="" /></Nav.Link>
-                        <Nav.Link onClick={event => toggleLanguage(event, 'en-GB')}><img src={ukFlag} alt="logo" width="24" height="24" className="" /></Nav.Link>
+                    <Nav className="d-flex align-items-center">
+
                         <Nav.Link eventKey={2} href="#contact">
                             Contact me
                         </Nav.Link>
                         <Nav.Link href="https://www.linkedin.com/in/yernauxalexis/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="logo" width="24" height="24" className="mx-2" /></Nav.Link>
                         <Nav.Link href="mailto: yernauxalex@gmail.com"><img src={emailIcon} alt="logo" width="24" height="24" className="mx-2" /></Nav.Link>
+                        <Nav.Item className="d-flex ">
+                            <Nav.Link onClick={event => toggleLanguage(event, 'fr-FR')}><img src={franceFlag} alt="logo" width="24" height="24" className="mx-2 mx-lg-0" /></Nav.Link>
+                            <Nav.Link onClick={event => toggleLanguage(event, 'en-GB')}><img src={ukFlag} alt="logo" width="24" height="24" className="mx-2 mx-lg-0" /></Nav.Link>
+                        </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
