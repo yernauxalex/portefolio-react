@@ -1,12 +1,14 @@
 import React, { useState, useContext } from "react";
 import { LanguageContext } from "../Utils/LanguageContext";
 import { Container, Col, Row } from 'react-bootstrap';
+import StickyBox from "react-sticky-box";
 import PreviewProjectCard from "../components/PreviewProjectCard";
 import ProjectCard from '../components/ProjectCard'
 import { project } from '../datas/project'
 import profileIcon from '../assets/profileIcon.jpg'
 import linkedinIcon from '../assets/icons/linkedinIcon.png'
 import emailIcon from '../assets/icons/emailIcon.png'
+import githubWIcon from '../assets/icons/githubWIcon.png'
 
 function Home() {
     const { languageState } = useContext(LanguageContext)
@@ -24,8 +26,8 @@ function Home() {
     return (
         <>
             <Row className="mx-0">
-                <Col lg="auto" className="px-0 ps-lg-5 d-flex justify-content-center align-items-center">
-                    <Container className="py-5 profile">
+                <Col lg="auto" className="px-0 ps-lg-5 d-flex justify-content-center align-items-start">
+                    <StickyBox className="py-5 profile" id="contact">
                         <img src={profileIcon} alt="profile picture" width="200" height="200" className="img-rounded" />
                         <h1>Yernaux Alexis</h1>
                         {languageState.lang === 'fr-FR' ? (<p>Développeur fullstack junior cherchant un emploi en région Parisienne ou en remote</p>) :
@@ -36,9 +38,10 @@ function Home() {
                             <li>NodeJs</li>
                             <li>Bootstrap</li>
                         </ul>
-                        <a href="https://www.linkedin.com/in/yernauxalexis/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="logo" width="24" height="24" className="mx-2" /></a>
-                        <a href="mailto: yernauxalex@gmail.com"><img src={emailIcon} alt="logo" width="24" height="24" className="mx-2" /></a>
-                    </Container>
+                        <a href="https://www.linkedin.com/in/yernauxalexis/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="Lien vers mon profil linkedin" width="24" height="24" className="mx-2" /></a>
+                        <a href="mailto: yernauxalex@gmail.com"><img src={emailIcon} alt="Contact par email" width="24" height="24" className="mx-2" /></a>
+                        <a href="https://github.com/yernauxalex" target="_blank" rel="noopener noreferrer"><img src={githubWIcon} alt="Lien vers mon profil github" width="24" height="24" className="mx-2" /></a>
+                    </StickyBox>
                 </Col>
                 <Col className="px-0">
                     <Container className="px-0 d-flex justify-content-center flex-wrap">
