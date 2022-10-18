@@ -5,13 +5,16 @@
   background-size: cover;
 }
 .card-custom{
-  max-width: 25rem;
-  min-width: 25rem;
+  width: 25rem;
+  min-height: 25rem;
   margin: 1rem;
 }
 @media screen and (max-width: 576px) {
-  .card-custom{min-width: 20rem;}    
-  }
+  .card-custom{
+    width: 20rem;
+    min-height: 20rem;
+  }    
+}
 .card-banner{
   max-height: 200px;
   min-height: none;
@@ -45,4 +48,10 @@
 }
 h3{
   font-size: 1.2rem;
+}
+.is-sticky {
+  position: fixed;
+  top: 10px;
+  z-index: 999;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
