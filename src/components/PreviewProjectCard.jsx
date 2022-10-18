@@ -15,7 +15,7 @@ function PreviewProjectCard(props) {
         <>{data.map(({ id, nameFR, nameEN, descFR, descEN, pathBanner, urlGithub, urlHost, frontend, backend, type }) => (
             <Card key={id} className="card-custom">
                 <a onClick={event => handleClick(event, id)}>
-                    <Card.Img variant="top" src={pathBanner} alt={"preview of the project " + name} className="card-banner" />
+                    <Card.Img variant="top" src={pathBanner} alt={"preview of the project " + nameEN} className="card-banner" />
                 </a>
                 <Card.Body className="d-flex flex-column justify-content-evenly">
                     <a onClick={event => handleClick(event, id)}>
