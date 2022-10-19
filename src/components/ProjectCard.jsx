@@ -22,18 +22,19 @@ function ProjectCard(props) {
             </Modal.Header>
             <Modal.Body>
                 {languageState.lang === 'fr-FR' ? (<>
-                    <p>Description détaillée {data.descFR}</p>
-                    {data.hostBy ? (<p>Hébergé par {data.hostBy}</p>) : null}</>
-                ) : (<>
-                    <p>Rich desc {data.descEN}</p>
-                    {data.hostBy ? (<p>Hosted by  {data.hostBy}</p>) : null}</>
-                )}
+                    {data.richDescFR ? (<p>{data.richDescFR}</p>) : (<p>{data.descFR}</p>)}
+                    {data.hostBy ? (<p>Hébergé par {data.hostBy}</p>) : null}
+                </>) : (<>
+                    {data.richDescEN ? (<p>{data.richDescEN}</p>) : (<p>{data.descEN}</p>)}
+                    {data.hostBy ? (<p>Hosted by  {data.hostBy}</p>) : null}
+                </>)
+                }
                 {data.tech != null ? (
                     <>
                         {languageState.lang === 'fr-FR' ? (
-                            <h3>Technos utilisées</h3>
+                            <h3>Technos / outils utilisées</h3>
                         ) : (
-                            <h3>Tech used</h3>
+                            <h3>Tech / tools used</h3>
                         )}
 
                         <Stack gap={1}>
