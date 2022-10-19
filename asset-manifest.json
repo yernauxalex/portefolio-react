@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/portefolio-react/static/css/main.bb7644e5.css",
-    "main.js": "/portefolio-react/static/js/main.b01b5792.js",
+    "main.css": "/portefolio-react/static/css/main.da850b2b.css",
+    "main.js": "/portefolio-react/static/js/main.49d77440.js",
+    "static/js/897.971b1985.chunk.js": "/portefolio-react/static/js/897.971b1985.chunk.js",
     "static/js/787.84ce6950.chunk.js": "/portefolio-react/static/js/787.84ce6950.chunk.js",
     "static/media/chouetteagenceBanner.png": "/portefolio-react/static/media/chouetteagenceBanner.a1ce0c483a5aa4a6620d.png",
     "static/media/kanapBanner.png": "/portefolio-react/static/media/kanapBanner.9dd62ec60f8e3dd05244.png",
@@ -13,12 +14,13 @@
     "static/media/reviewsBanner.png": "/portefolio-react/static/media/reviewsBanner.86eaf411ffc2eeadd170.png",
     "static/media/background.svg": "/portefolio-react/static/media/background.b3833d7b56c242c40d68.svg",
     "index.html": "/portefolio-react/index.html",
-    "main.bb7644e5.css.map": "/portefolio-react/static/css/main.bb7644e5.css.map",
-    "main.b01b5792.js.map": "/portefolio-react/static/js/main.b01b5792.js.map",
+    "main.da850b2b.css.map": "/portefolio-react/static/css/main.da850b2b.css.map",
+    "main.49d77440.js.map": "/portefolio-react/static/js/main.49d77440.js.map",
+    "897.971b1985.chunk.js.map": "/portefolio-react/static/js/897.971b1985.chunk.js.map",
     "787.84ce6950.chunk.js.map": "/portefolio-react/static/js/787.84ce6950.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb7644e5.css",
-    "static/js/main.b01b5792.js"
+    "static/css/main.da850b2b.css",
+    "static/js/main.49d77440.js"
   ]
 }
