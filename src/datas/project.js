@@ -6,12 +6,15 @@ import kanapBanner from '../assets/projectBanner/kanapBanner.png';
 import reviewsBanner from '../assets/projectBanner/reviewsBanner.png';
 import chouetteagenceBanner from '../assets/projectBanner/chouetteagenceBanner.png';
 import ohmyfoodBanner from '../assets/projectBanner/ohmyfoodBanner.png';
+import weatherappBanner from '../assets/projectBanner/weatherappBanner.png';
 import bootstrapIcon from '../assets/icons/bootstrapIcon.png';
 import reactIcon from '../assets/icons/reactIcon.png';
 import nodejsIcon from '../assets/icons/nodejsIcon.png';
 import javascriptIcon from '../assets/icons/javascriptIcon.png';
 import postgreIcon from '../assets/icons/postgreIcon.png';
 import html5Icon from '../assets/icons/html5Icon.png';
+
+// last ID: 8
 export const project = [
     {
         id: 1,
@@ -42,8 +45,10 @@ export const project = [
         descFR:
             "Trouvez le signe astrologique compatible avec le votre d'après vos artistes favoris sur Spotify 🎶",
         descEN: 'Find your matching sign based on your favorite artists on Spotify 🎶',
-        richDescFR: null,
-        richDescEN: null,
+        richDescFR:
+            "Trouvez le signe astrologique compatible avec le votre d'après vos artistes favoris sur Spotify. La liste des fonctionnalités prévues est disponible sur le Github",
+        richDescEN:
+            'Find your compatible astrological sign based on your favourite artists on Spotify. The list of planned features is available on Github',
         pathBanner: astroSpotifyBanner,
         urlGithub: 'https://github.com/yernauxalex/astralspotify',
         urlHost: 'https://resonant-medovik-c1c915.netlify.app/',
@@ -55,7 +60,32 @@ export const project = [
             { name: 'React', icon: reactIcon },
             { name: 'Bootstrap', icon: bootstrapIcon }
         ],
-        type: 'perso'
+        type: 'perso',
+        wip: true
+    },
+    {
+        id: 8,
+        nameFR: 'Appplication météo',
+        nameEN: 'Simple weather app',
+        descFR: "Simple application météo utilisant l'api d'OpenWeather",
+        descEN: 'Simple weather application using the OpenWeather api',
+        richDescFR:
+            "Simple application météo utilisant l'api d'OpenWeather. La liste des fonctionnalités prévues est disponible sur le Github",
+        richDescEN:
+            'Simple weather application using the OpenWeather api. The list of planned features is available on Github',
+        pathBanner: weatherappBanner,
+        urlGithub: 'https://github.com/yernauxalex/weather-app-react',
+        urlHost: 'https://glowing-truffle-62816a.netlify.app/',
+        hostBy: 'Netlify',
+        frontend: true,
+        backend: false,
+        tech: [
+            { name: 'Javascript', icon: javascriptIcon },
+            { name: 'React', icon: reactIcon },
+            { name: 'Bootstrap', icon: bootstrapIcon }
+        ],
+        type: 'perso',
+        wip: true
     },
     {
         id: 3,
