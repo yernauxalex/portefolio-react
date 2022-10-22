@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from "../Utils/LanguageContext";
-import { Card } from 'react-bootstrap';
+import { Card, Badge } from 'react-bootstrap';
 import githubIcon from '../assets/icons/githubIcon.png'
 import shareIcon from '../assets/icons/shareIcon.png'
 
@@ -12,18 +12,22 @@ function PreviewProjectCard(props) {
         props.fc(id)
     }
     return (
-        <>{data.map(({ id, nameFR, nameEN, descFR, descEN, pathBanner, urlGithub, urlHost, frontend, backend, type }) => (
+        <>{data.map(({ id, nameFR, nameEN, descFR, descEN, pathBanner, urlGithub, urlHost, frontend, backend, type, wip }) => (
             <Card key={id} className="card-custom">
-                <a onClick={event => handleClick(event, id)}>
+                <a onClick={event => handleClick(event, id)} tabIndex="0">
                     <Card.Img variant="top" src={pathBanner} alt={"preview of the project " + nameEN} className="card-banner" />
                 </a>
                 <Card.Body className="d-flex flex-column justify-content-evenly">
                     <a onClick={event => handleClick(event, id)}>
                         {languageState.lang === 'fr-FR' ? (<>
-                            <Card.Title>{nameFR}</Card.Title>
+                            <Card.Title>{nameFR}
+                                {wip ? (<Badge bg="info" className="ms-3">WIP</Badge>) : null}
+                            </Card.Title>
                             <Card.Text>{descFR}</Card.Text></>
                         ) : (<>
-                            <Card.Title>{nameEN}</Card.Title>
+                            <Card.Title>{nameEN}
+                                {wip ? (<Badge bg="info" className="ms-3">WIP</Badge>) : null}
+                            </Card.Title>
                             <Card.Text>{descEN}</Card.Text>
                         </>)}
 

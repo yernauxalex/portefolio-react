@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { LanguageContext } from "../Utils/LanguageContext";
-import { Modal, Stack } from 'react-bootstrap'
+import { Modal, Stack, Badge } from 'react-bootstrap'
 import shareIcon from '../assets/icons/shareIcon.png'
 
 function ProjectCard(props) {
@@ -18,6 +18,7 @@ function ProjectCard(props) {
                         <>{data.nameEN}</>
                     )}
                     {data.urlHost != '' ? (<a href={data.urlHost} target="_blank" rel="noopener noreferrer"><img src={shareIcon} alt="logo" width="20" height="20" className="mx-2" /></a>) : null}
+                    {data.wip ? (<Badge bg="info" className="ms-3">WIP</Badge>) : null}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
