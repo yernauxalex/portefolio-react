@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portefolio-react/static/css/main.da850b2b.css",
-    "main.js": "/portefolio-react/static/js/main.49d77440.js",
-    "static/js/897.971b1985.chunk.js": "/portefolio-react/static/js/897.971b1985.chunk.js",
+    "main.js": "/portefolio-react/static/js/main.b3dfb889.js",
+    "static/js/897.5fa19df2.chunk.js": "/portefolio-react/static/js/897.5fa19df2.chunk.js",
     "static/js/787.84ce6950.chunk.js": "/portefolio-react/static/js/787.84ce6950.chunk.js",
     "static/media/chouetteagenceBanner.png": "/portefolio-react/static/media/chouetteagenceBanner.a1ce0c483a5aa4a6620d.png",
+    "static/media/weatherappBanner.png": "/portefolio-react/static/media/weatherappBanner.3b2123e8cb81a663a1b1.png",
     "static/media/kanapBanner.png": "/portefolio-react/static/media/kanapBanner.9dd62ec60f8e3dd05244.png",
     "static/media/ohmyfoodBanner.png": "/portefolio-react/static/media/ohmyfoodBanner.bf9c7905ba0ac97b6a0a.png",
     "static/media/groupomaniaBanner.png": "/portefolio-react/static/media/groupomaniaBanner.e8eaac00eb7ea0edf720.png",
@@ -15,12 +16,12 @@
     "static/media/background.svg": "/portefolio-react/static/media/background.b3833d7b56c242c40d68.svg",
     "index.html": "/portefolio-react/index.html",
     "main.da850b2b.css.map": "/portefolio-react/static/css/main.da850b2b.css.map",
-    "main.49d77440.js.map": "/portefolio-react/static/js/main.49d77440.js.map",
-    "897.971b1985.chunk.js.map": "/portefolio-react/static/js/897.971b1985.chunk.js.map",
+    "main.b3dfb889.js.map": "/portefolio-react/static/js/main.b3dfb889.js.map",
+    "897.5fa19df2.chunk.js.map": "/portefolio-react/static/js/897.5fa19df2.chunk.js.map",
     "787.84ce6950.chunk.js.map": "/portefolio-react/static/js/787.84ce6950.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da850b2b.css",
-    "static/js/main.49d77440.js"
+    "static/js/main.b3dfb889.js"
   ]
 }
